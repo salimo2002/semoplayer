@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:semoplayer/constants.dart';
 import 'package:semoplayer/views/home_view.dart';
 
 void main(List<String> args) {
@@ -10,9 +12,15 @@ class SemoPlayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(color: kPrimaryColor),
+        textTheme: GoogleFonts.josefinSansTextTheme(
+          Theme.of(context).textTheme,
+        ),
+      ),
+      home: const HomeView(),
     );
   }
 }
