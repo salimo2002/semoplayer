@@ -4,7 +4,7 @@
 AppBar appBar() {
     return AppBar(
       iconTheme: const IconThemeData(color: Colors.white),
-      toolbarHeight: 60,
+      toolbarHeight: 75,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(14),

@@ -35,10 +35,10 @@ class _PlaySongIconState extends State<PlaySongIcon> {
           },
           icon: isActiv
               ? const Icon(
-                  FontAwesomeIcons.heart,
+                  FontAwesomeIcons.heartCircleBolt,
                 )
               : const Icon(
-                  FontAwesomeIcons.heartCircleBolt,
+                  FontAwesomeIcons.heart,
                 ),
         ),
         Lottie.asset(
