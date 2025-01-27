@@ -17,15 +17,15 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       appBar: appBar(),
       endDrawer: const Drawer(),
-      body: Column(
+      body: const Column(
         children: [
           Column(
             children: [
-              const Divider(
+              Divider(
                 color: kPrimaryColor,
                 thickness: 2,
               ),
-              SongCard(value: value)
+              SongCard()
             ],
           ),
         ],
