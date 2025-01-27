@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:semoplayer/constants.dart';
+import 'package:semoplayer/views/playing_view.dart';
 import 'package:semoplayer/widgets/play_song_icon.dart';
 import 'package:semoplayer/widgets/song_name_and_rating.dart';
 
@@ -11,6 +12,9 @@ class SongCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: () {
+        Navigator.pushNamed(context, PlayingView.id);
+      },
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(32),
       ),

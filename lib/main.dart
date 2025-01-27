@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:semoplayer/constants.dart';
 import 'package:semoplayer/views/home_view.dart';
+import 'package:semoplayer/views/playing_view.dart';
 
 void main(List<String> args) {
   runApp(const SemoPlayer());
@@ -21,7 +22,11 @@ class SemoPlayer extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      home: const HomeView(),
+      routes: {
+        HomeView.id: (context) => const HomeView(),
+        PlayingView.id: (context) => const PlayingView()
+      },
+      initialRoute: HomeView.id,
     );
   }
 }
