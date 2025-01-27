@@ -15,6 +15,7 @@ class SemoPlayer extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        useMaterial3: true,
         appBarTheme: const AppBarTheme(color: kPrimaryColor),
         textTheme: GoogleFonts.josefinSansTextTheme(
           Theme.of(context).textTheme,

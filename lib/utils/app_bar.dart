@@ -13,7 +13,7 @@ AppBar appBar() {
       ),
       centerTitle: true,
       title: const Text(
-        'Music Player',
+        'Semo Player',
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white,
